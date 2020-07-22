@@ -23,7 +23,7 @@
 
                 function obtenerDatos() {
                     //Impotar la conexion a la DB
-                    include('../demo_formulario/include/funciones/db.php');
+                    include('../funciones/db.php');
 
                     return $conn->query("SELECT nombre, apellido, dni, edad, fecha_nacimiento, genero, pais, provincia, localidad, calle, numero FROM personas WHERE (edad > 24 && edad < 35)");
                 }
