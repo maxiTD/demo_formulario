@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: auto;
+    background-color: #e6f1fd;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+     font-size: 2.5rem;
+}
+
+.site-header {
+     text-align: center;
+     background-color: #607d8b;
+     padding: 1rem 0;
+     border-radius: 5px;
+     border: 2px solid #1a658a;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+/** Formulario **/
+.formulario {
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: #045a85;
+}
+
+fieldset {
+    border-radius: 5px;
+    background-color: #bddcff;
+    border: 2px #607d8b solid;
+    margin-bottom: .5rem;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.campo {
+    margin: 1rem;
+}
+label {
+    font-size: 2rem;
+    display: block;
+    margin: .5rem 0;
+}
+
+input:not([type="submit"]),
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+}
+
+/** Botones **/
+.boton {
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #607d8b;
+    color: white;
+    float: right;
+}
+
+.boton-actualizar {
+    text-decoration: none;
+}
+
+/** Listado **/
+.contenedor-listado {
+    margin: 7rem 0 0 0;
+    border: 2px solid #1a658a;
+    border-radius: 5px;
+    background-color: #607d8b;
+    overflow: auto;
+}
+
+.listado {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+.listado thead {
+    background-color: #045a85;
+    color: white;
+    text-transform: uppercase;
+}
+
+.listado thead th {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.listado tbody {
+    background-color: #bddcff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.listado tbody td {
+    padding: .5rem 0;
+}
