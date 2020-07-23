@@ -24,5 +24,5 @@
                 <td><?php echo $persona['numero']; ?></td>
             </tr>
     <?php }
-    }
+}
 ?>
