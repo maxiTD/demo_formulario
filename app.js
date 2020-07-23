@@ -37,7 +37,6 @@ function insertarDB(datos) {
     //Crear el objeto
     const xhr = new XMLHttpRequest();
     //Abrir la conexión
-    //xhr.open('POST', '../demo_formulario/inc/modelos/modelo-datos.php', true);
     xhr.open('POST', 'include/funciones/insertar.php', true);
     //enviar los datos
     xhr.send(datos);
